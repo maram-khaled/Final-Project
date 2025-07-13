@@ -676,17 +676,33 @@ h2 {
       .section-label {
         color: #d46d0c;
         font-size: 16px;
-        margin-right: 0px;
-        margin-left: 45%;
-        margin-top: 60px;
+        margin-top: 80px;
+        text-align: center;
       }
       
       .title {
         font-size: 28px;
-        margin-bottom: 6px;
+        margin : 5px auto;
+       text-align: center;
+        
+      }
+
+      .big-title{
+        text-align: center;
+        margin: 6px auto;
       }
       
+      .ti-1{
+        margin-bottom: 15px;
+        width:687px;
+        height: 270px;
+      }
+      .ti-2{
+        width: 655px;
+        height: 210px;
+      }
       
+
       
       .product-list {
         list-style: none;
@@ -694,6 +710,7 @@ h2 {
         flex-direction: column;
         gap: 20px;
         margin-bottom: 30px;
+        margin-left: -60px;
       }
       
       .product-list li {
@@ -738,28 +755,47 @@ h2 {
         flex-direction: column;
         gap: 20px;
         width: 300px;
+        position: relative;
       }
       
       .images-column img {
         width: 100%;
-        height: auto;
+    
         object-fit: cover;
+        position: absolute;
       }
       
       .img-top {
         border-top-left-radius: 55px;
         border-top-right-radius: 55px;
+        z-index: 2;
+        top: 0%;
+        left : 65%;
+        transform:translate(-50%,-50);
+        height: 300px;
+        width: 290px;
+        margin-top: 10px;
       }
       
       
       .img-middle {
         border-top-left-radius: 55px;
         border-top-right-radius: 55px;
+        z-index: 4;
+        top: 50%;
+        transform: translateY(-50%);
+
       }
       
       .img-bottom {
         border-top-left-radius: 55px;
         border-top-right-radius: 55px;
+        z-index: 1;
+        top :50%;
+        left : 65%;
+        transform:translate(-50%,-50);
+        height: 314px;
+        width: 310px;
       }
 
       
